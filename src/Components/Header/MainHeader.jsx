@@ -9,11 +9,11 @@ const MainHeader = () => {
     <header className=" header">
       <div className="container d-flex align-items-center">
         <div className="logo">
-          <a href="index.html">
+          <Link to='/'>
             <h1 className="logo me-auto">City</h1>
             <br />
             <h2 className="logo-tiny-text me-auto">Multispeciality Hospital</h2>
-          </a>
+          </Link>
         </div>
         <Nav className="navbar order-last order-lg-0 ">
           <Nav.Item>
