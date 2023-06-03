@@ -5,6 +5,7 @@ import General from "../../Components/General";
 import Facilities from "../../Components/Facilities";
 import Reviews from "../../Components/Reviews";
 import Gallery from "../../Components/Gallery";
+import Footer from './../../Components/Footer/index';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Facilities/>
       <Reviews/>
       <Gallery/>
+      <Footer/>
     </>
   );
 };
