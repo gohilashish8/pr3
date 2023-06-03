@@ -1,7 +1,10 @@
 import React from "react";
 import { Nav } from "react-bootstrap";
+import { Link, useLocation } from "react-router-dom";
 
 const MainHeader = () => {
+  const {pathname} = useLocation();
+
   return (
     <header className=" header">
       <div className="container d-flex align-items-center">
@@ -14,27 +17,27 @@ const MainHeader = () => {
         </div>
         <Nav className="navbar order-last order-lg-0 ">
           <Nav.Item>
-            <Nav.Link className="nav-link scrollto active" href="#">
+            <Link className={`nav-link scrollto ${pathname==='/' ? 'active' : '' }`} to="/" >
               Home
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link scrollto " href="#">
-            Departments
-            </Nav.Link>
+            <Link  className={`nav-link scrollto ${pathname==='/departments' ? 'active' : '' }`} to="/departments">
+                Departments
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link scrollto " href="#">
+            <Nav.Link className="nav-link scrollto " >
             Doctors
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link scrollto " href="#">
+            <Nav.Link className="nav-link scrollto " >
             About
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link className="nav-link scrollto " href="#">
+            <Nav.Link className="nav-link scrollto " >
             Contact
             </Nav.Link>
           </Nav.Item>
