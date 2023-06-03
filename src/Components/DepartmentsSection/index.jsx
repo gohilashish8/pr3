@@ -103,6 +103,7 @@ const DepartmentsSection = () => {
           </Tab.Container>
         </div>
       </section>
+      <div className="py-5"></div>
     </>
   );
 };
