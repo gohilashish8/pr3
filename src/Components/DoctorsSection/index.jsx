@@ -1,12 +1,6 @@
 import React from "react";
 import "./DoctorsSection.css";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+
 import { Col, Row } from "react-bootstrap";
 import DoctorBox from "./DoctorBox";
 
