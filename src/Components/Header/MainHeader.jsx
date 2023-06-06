@@ -6,7 +6,7 @@ const MainHeader = () => {
   const { pathname } = useLocation();
 
   return (
-    <header className=" header">
+    <header className=" header position-sticky top-0">
       <div className="container d-flex align-items-center">
         <div className="logo">
           <Link to="/">
